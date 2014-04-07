@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class CreateUserActivity extends Activity {
 
-	private static final String SAVE_URL = "https://www.cse.msu.edu/~averycon/cse476stacker/stacker_create_user.php";
+	private static final String SAVE_URL = "https://www.cse.msu.edu/~averycon/cse476/stacker_create_user.php";
     private String userNameString;
     private String passwordString;
     private String userNameConfirmString;

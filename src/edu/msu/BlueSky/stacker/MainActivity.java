@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 	private String player1Name;
 	private String player2Name;
 	
-	private static final String LOGIN_URL = "https://www.cse.msu.edu/~sweetmax/cse476Proj2/stacker_login.php";
+	private static final String LOGIN_URL = "https://www.cse.msu.edu/~averycon/cse476/stacker_login.php";
     private String userNameString;
     private String passwordString;
     
