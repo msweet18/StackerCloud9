@@ -1,0 +1,64 @@
+
+Project 2 Submission
+
+Group Name:   blueSky
+
+When you have completed the project, complete the following form and include it with your project. Include this file as a text file in the folder with your project when you turn it in. 
+
+For the Checkpoint, Describe a sequence of operations to create a new account and log onto the server:
+
+A functionality checklist will not be provided for the project. Treat this as you would a request from a client and identify what the client requires. 
+
+Member 1: Maximillian Sweet
+
+Responsiblity: Client Side
+
+
+
+Member 2: Connor Avery
+
+Responsiblity: Server Side
+
+
+
+Member 3: Josh Peltcher
+
+Responsiblity: Layouts, and page creation
+
+
+
+Member 4 (if applicable): 
+
+Responsiblity:
+
+
+Provide instructions on how to reach the first editing activity if the login button is not yet functional.
+
+when the activity starts, select create user to create a new user, then fill out the username and password text fields and select submit
+A toast notification will let you know if it was successfull
+on the main page enter the created user and select login
+a toast notification will let you know whether or not the user exists
+if the user exists, the game will begin
+
+User account the server-side communications is running under:
+
+sweetmax
+
+Paths to all server-side scripts: (Such as https://www.cse.msu.edu/~carter/project2/login.php).
+
+https://www.cse.msu.edu/~sweetmax/cse476Proj2/stacker_login.php
+https://www.cse.msu.edu/~sweetmax/cse476Proj2/stacker_create_user.php
+
+Where in the code the passive connection timeout is set (provide a script name and line number):
+
+not required for checkpoint
+
+Calls in the code to the server (provide a class name and function, or URL used for debugging):
+
+CreateUserActivity
+openFromServer(final String query)
+
+MainActivity
+checkServer(final String query)
+
+

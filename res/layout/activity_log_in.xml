@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/stackerImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:contentDescription="@string/stacker"
+        android:padding="20dp"
+        android:src="@drawable/stacker" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/loginName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textUri" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/logIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/createUser"
+            android:layout_alignBottom="@+id/createUser"
+            android:layout_toRightOf="@+id/createUser"
+            android:onClick="onLogin"
+            android:text="@string/Log_in" />
+
+        <CheckBox
+            android:id="@+id/rememberCredentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logIn"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Remember_Credentials" />
+
+        <Button
+            android:id="@+id/createUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rememberCredentials"
+            android:layout_below="@+id/loginPassword"
+            android:onClick="onCreateUser"
+            android:text="@string/Create_User" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

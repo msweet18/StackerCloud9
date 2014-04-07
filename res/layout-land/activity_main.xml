@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_toLeftOf="@+id/view1"
+        android:padding="20dp"
+        android:src="@drawable/stacker" />
+
+<View
+    android:id="@+id/view1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="false" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="false"
+    android:layout_gravity="left"
+    android:layout_toRightOf="@+id/imageView1"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5" >
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onStartGame"
+            android:text="@string/start_game" />
+
+    </FrameLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Stacker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start_game">Start Game</string>
+    <string name="welcome">Welcome to Blue Sky\'s Stacker</string>
+    <string name="title_activity_puzzle">Puzzle</string>
+    <string name="hurrah">Hurrah!!!</string>
+    <string name="stacker">Stacker</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="kg1">1 kg</string>
+    <string name="kg2">2 kg</string>
+    <string name="kg5">5 kg</string>
+    <string name="kg10">10 kg</string>
+    <string name="title_activity_final_score">FinalScoreActivity</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="score1">5</string>
+    <string name="score2">4</string>
+    <string name="EndGame">End Game</string>
+    <string name="EndTurn">End Turn</string>
+    <string name="StackerLogo">Game Logo</string>
+    <string name="Log_in">Log in</string>
+    <string name="Create_User">Create User</string>
+    <string name="Remember_Credentials">Remember Credentials</string>
+    <string name="title_activity_create_user">Create A New User</string>
+    <string name="title_activity_login">Login</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="new_username">New Username:</string>
+    <string name="new_password">New Password:</string>
+    <string name="submit">Submit</string>
+    <string name="create_new_user">Create A New User</string>
+    <string name="confirm_username">Confirm Username:</string>
+    <string name="catalog_fail">Name or Password does not match</string>
+    <string name="catalog_new_user">New User Successfully Created</string>
+    <string name="catalog_user_does_not_exist">User Does Not Exist</string>
+    <string name="catalog_user_already_exists">User Already Exists</string>
+    <string name="catalog_user_exists">Successfully Logged In</string>
+    
+
+</resources>

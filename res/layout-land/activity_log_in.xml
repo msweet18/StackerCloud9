@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_toLeftOf="@+id/view1"
+        android:contentDescription="@string/StackerLogo"
+        android:padding="20dp"
+        android:src="@drawable/stacker" />
+
+<View
+    android:id="@+id/view1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="false" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="false"
+    android:layout_gravity="left"
+    android:layout_toRightOf="@+id/imageView1"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.68" >
+
+        <Button
+            android:id="@+id/logIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/createUser"
+            android:layout_alignBottom="@+id/createUser"
+            android:layout_toRightOf="@+id/createUser"
+            android:text="@string/Log_in" />
+
+        <Button
+            android:id="@+id/createUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newName"
+            android:layout_below="@+id/newName"
+            android:layout_marginLeft="16dp"
+            android:onClick="onCreateUser"
+            android:text="@string/Create_User" />
+
+        <EditText
+            android:id="@+id/loginName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newName"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/newName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/rememberCredentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logIn"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Remember_Credentials" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
